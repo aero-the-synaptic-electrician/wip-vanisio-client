@@ -2348,7 +2348,7 @@
 			if (this.crownSprite) console.error("addCrown: crown already exists");
 			else {
 				var e, t = this.game.crownPool;
-				t.length ? e = t.pop() : ((e = PIXI.Sprite.from("/img/crown.png")).scale.set(.7), e.pivot.set(0, 643), e.anchor.x = .5, e.rotation = -.5, e.alpha = .7, e.zIndex = 2), this.crownSprite = e, this.sprite.addChild(e)
+				t.length ? e = t.pop() : ((e = PIXI.Sprite.from("img/crown.png")).scale.set(.7), e.pivot.set(0, 643), e.anchor.x = .5, e.rotation = -.5, e.alpha = .7, e.zIndex = 2), this.crownSprite = e, this.sprite.addChild(e)
 			}
 		}
 		removeCrown() {
@@ -2432,7 +2432,7 @@
 	var a = s(14);
 	e.exports = class extends a {
 		constructor(e) {
-			e.texture = PIXI.Texture.from("/img/crown.png"), super(e), this.sprite.alpha = .7
+			e.texture = PIXI.Texture.from("img/crown.png"), super(e), this.sprite.alpha = .7
 		}
 	}
 }, function (e, t) {
@@ -5928,7 +5928,7 @@
 							name: s,
 							data: t
 						};
-						t.startsWith("REPLAY") ? a.image = t.split("|")[2] : a.image = "https://vanis.io/img/replay-placeholder.png", e.push(a)
+						t.startsWith("REPLAY") ? a.image = t.split("|")[2] : a.image = "img/replay-placeholder.png", e.push(a)
 					}, () => {
 						this.replays = e.reverse(), this.loaded = true
 					})
@@ -6325,7 +6325,7 @@
 			}), e._v(" "), s("img", {
 				staticClass: "skin add-skin",
 				attrs: {
-					src: "/img/skin-add.png",
+					src: "img/skin-add.png",
 					alt: ""
 				},
 				on: {
@@ -7196,7 +7196,7 @@
 					width: "120px"
 				},
 				attrs: {
-					src: "/img/sad.png"
+					src: "img/sad.png"
 				}
 			}), this._v(" "), t("p", {
 				staticStyle: {
@@ -7213,7 +7213,7 @@
 					"box-shadow": "0 0 10px black"
 				},
 				attrs: {
-					src: "/img/ab.gif"
+					src: "img/ab.gif"
 				}
 			})])
 		}], false, null, "1611deb4", null));
